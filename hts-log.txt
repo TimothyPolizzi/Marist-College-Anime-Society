@@ -1,0 +1,15 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sun, 11 Feb 2018 21:54:04 at http://clubs.marist.edu/anime/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://clubs.marist.edu/anime/ -O1 "C:\My Web Sites\Anime20172018" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+21:54:10	Error: 	"Not Found" (404) at link https://bootswatch.com/sandstone/bootstrap.min.css (from clubs.marist.edu/anime/)
+22:02:02	Error: 	"Forbidden" (403) at link https://kawaii-mobile.com/wp-content/uploads/2015/11/Charlotte-Yuu-Otosaka-Nao-Tomori.Android-wallpaper-2160x1920.jpg (from clubs.marist.edu/anime/current_listings.html)
+22:02:02	Error: 	"Forbidden" (403) at link https://kawaii-mobile.com/wp-content/uploads/2015/11/Charlotte-Nao-Tomori.Android-wallpaper-2160x1920-5.jpg (from clubs.marist.edu/anime/current_listings.html)
+22:02:37	Error: 	"Access Denied" (403) at link https://scontent-iad3-1.xx.fbcdn.net/t31.0-8/10460850_10152813444652365_3137903499486980399_o.jpg (from clubs.marist.edu/anime/e-board.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 8 minutes 37 seconds : 66 links scanned, 61 files written (24394724 bytes overall) [23988710 bytes received at 46399 bytes/sec], 616747 bytes transferred using HTTP compression in 7 files, ratio 28%, 1.5 requests per connection
+(4 errors, 0 warnings, 0 messages)
