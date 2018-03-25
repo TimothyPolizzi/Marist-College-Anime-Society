@@ -108,25 +108,25 @@ body{
 /* Akane img */
 .akane-footer{
 	width:200px;
-	margin-left: 80%;
+	margin-left: 50%;
     margin-right: 0%;
 	margin-top: -28%;
-    margin-bottom: -0.5%;
+    margin-bottom: 5%;
 }
 
 /* Marist logo */
 .footer-logo{
     width:300px;
     margin-left: 0%;
-    margin-right: 70%;
+    margin-right: 50%;
+    margin-bottom: 5%;
 }
 
 /* Facebook logo */
 .footer-facebook{
 	margin-left: 0%;
     margin-right: 0%;
-    margin-bottom: 1.75%;
-    margin-top: -28%;
+    margin-bottom: 5%;
 }
 
 /* Change f to different color when hovering over it */
