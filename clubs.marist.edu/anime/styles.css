@@ -22,7 +22,7 @@
 }
 
 /* ------------------- Body BS -------------------- */
-body{
+.wbody{
     margin: 0 auto;
     padding:0;
     text-align: center;
@@ -37,7 +37,7 @@ body{
     width:150px;
     height:150px;
     border-radius: 150px;
-    margin-left: 44%;
+    margin-left: 30%;
 }
 
 /* No real purpose? I can't quite tell what this does besides setting the color of the circles, is on index */
@@ -56,9 +56,8 @@ body{
 
 /* About-us page */
 .animeBackground{
-    height: 1080px;
     background-image: url("../../images.alphacoders.com/555/555557.png");
-    width: 1920px;
+    width: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
