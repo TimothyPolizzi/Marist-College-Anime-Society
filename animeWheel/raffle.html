@@ -1,0 +1,75 @@
+<Doctype! html>
+<html>
+    <head>
+        <title>Anime Club Raffle</title>
+        <script src="winwheel.js"></script>
+         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    </head>
+    <body>
+        <div align="center">
+            <canvas id = "canvas" width="880" height="500">
+            </canvas>
+            <script>
+                var wheel = new Winwheel({
+                    'numSegments' : 1,
+                    'segments' : [{
+                        'text' : 'Spin Again',
+                        'fillStyle' : '#ff0000'
+                    }],
+                    'pointerAngle' : 90,
+                    'textAligment' : 'outer',
+                    'pins' : true,
+                    'animation':
+                    {
+                        'type' : 'spinToStop',
+                        'duration' : Math.floor(Math.random()*4)+2,
+                        'spins' : Math.floor(Math.random()*8)+2,
+                        'callbackFinished' : 'getWinner()'
+                    }
+                });
+
+                function getWinner(){
+                    var winner = wheel.getIndicatedSegmentNumber();
+                    for(var i = 1; i < wheel.segments.length; i++){
+                        wheel.segments[i].fillStyle = 'gray';
+                    }
+                    wheel.segments[winner].fillStyle = 'yellow';
+                    wheel.draw();
+                }
+                function addSegment(){
+                    var name = document.getElementById("name");
+                    if(name.value != ""){
+                        wheel.addSegment({
+                            'text' : name.value,
+                            'fillStyle' : getRandomColor()
+                        });
+                        wheel.draw();
+                        name.value = "";
+                    }
+                }
+                function getRandomColor() {
+                    var letters = '0123456789ABCDEF';
+                    var color = '#';
+                    for (var i = 0; i < 6; i++) {
+                        color += letters[Math.floor(Math.random() * 16)];
+                    }
+                    return color;
+                }
+                document.getElementById("name").addEventListener("keyup", function(event) {
+                    event.preventDefault();
+                    if (event.keyCode == 13) {
+                        document.getElementById("submit").click();
+                    }
+                });
+
+            </script>
+            <img style="position:absolute; top:236px; right:373px;" src="pointing_hand.png" onClick="wheel.startAnimation();">
+            <br>
+            <br>
+            <br>
+            <input type="text" id="name" onkeypress="if(event.keyCode==13) addSegment()">
+            <input type="button" onclick="addSegment()" id = "submit" value="Submit Name">
+            <button onclick="wheel.stopAnimation(); wheel.rotationAngle=0; wheel.draw();">Reset</button>
+        </div>
+    </body>
+</html>
