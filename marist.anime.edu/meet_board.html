@@ -18,7 +18,7 @@
         <script src="../jquery/1.12.4/jquery.min.js"></script>
         
         <!-- Latest compiled JavaScript -->
-        <script src="../bootstrap/3.3.6/js/bootstrap.min.js"></script>        
+        <script src="../bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     
     <!-- navbar -->
@@ -39,8 +39,87 @@
           </ul>
     </nav>
     
-    <!-- body -->
+    <!-- Information/Code -->
+    <script type="text/javascript">
+        window.onload = function(){
+            pres();
+            vp();
+            tr();
+            sc();
+            lib();
+            pr();
+            wm();
+            pm();
+        }
 
+
+        //President info
+        function pres(){
+            document.getElementById("presName").innerHTML = "";
+            document.getElementById("presAnime").innerHTML = "";
+            document.getElementById("presChar").innerHTML = "";
+            document.getElementById("presBio").innerHTML = "";
+        }
+
+        //Vice President Info
+        function vp(){
+            document.getElementById("vpName").innerHTML = "";
+            document.getElementById("vpAnime").innerHTML = "";
+            document.getElementById("vpChar").innerHTML = "";
+            document.getElementById("vpBio").innerHTML = "";
+        }
+
+        //Treasurer Info
+        function tr(){
+            document.getElementById("trName").innerHTML = "Lee Russo";
+            document.getElementById("trAnime").innerHTML = "One Piece";
+            document.getElementById("trChar").innerHTML = "Kamina from Gurren Lagann and Luffy from One Piece";
+            document.getElementById("trBio").innerHTML = "Yo, I’m Lee, you’re treasurer. I’m a Games and Emerging Media major with a dual minor in creative writing and interractive media. I love shonen anime like One Piece, Fairy Tail, and Hunter x Hunter. Fight me on it. One of my favorite anime movies of all time is Wolf Children and I love card games like yu-gi-oh and Pokemon TCG. Eromanga Sensei is a masterpiece and let’s pray that Ugandan Knuckles may never die.";
+        }
+
+        //Secretary Info
+        function sc(){
+            document.getElementById("scName").innerHTML = "Ryan Sheffler";
+            document.getElementById("scAnime").innerHTML = "Yamada-kun to 7-nin no Majo";
+            document.getElementById("scChar").innerHTML = "Yu Narukami";
+            document.getElementById("scBio").innerHTML = "";
+        }
+
+        //Librarian Info
+        function lib(){
+            document.getElementById("libName").innerHTML = "Ethan Torres";
+            document.getElementById("libAnime").innerHTML = "Boku No Hero Academia";
+            document.getElementById("libChar").innerHTML = "Shoto Todoroki";
+            document.getElementById("libBio").innerHTML = "Hi I am ethan I am the librarian of anime I am also a freshman here are marist I been watching anime since I was a little kid starting with inuyasha on toonami";
+        }
+
+        //Public Relation Info
+        function pr(){
+            document.getElementById("prName").innerHTML = "None";
+            document.getElementById("prAnime").innerHTML = "N/A";
+            document.getElementById("prChar").innerHTML = "N/A";
+            document.getElementById("prBio").innerHTML = "Can someone please be our pr?";
+        }
+
+        //Webmaster Info
+        function wm(){
+            document.getElementById("wmName").innerHTML = "Tim Polizzi";
+            document.getElementById("wmAnime").innerHTML = "Nisekoi";
+            document.getElementById("wmChar").innerHTML = "Celty Sturluson";
+            document.getElementById("wmBio").innerHTML = "Hi its the guy who made this site! I'm a freshman here at Marist, (CS major), and I like coding. Sometimes. I've been watching anime for too long, and am neck deep in manga and LNs. If you ever want to find me, look for your local dark corner with an outlet and you can find me. Let me know if you find any bugs!";
+        }
+
+        //Project Master Info
+        function pm(){
+            document.getElementById("plName").innerHTML = "None";
+            document.getElementById("plAnime").innerHTML = "N/A";
+            document.getElementById("plChar").innerHTML = "N/A";
+            document.getElementById("plBio").innerHTML = "I'm dead inside.";
+        }
+    </script>
+    
+    <!--==-- Body --==-->
+    
     <body>
         <div class="row">
             <div class="col-sm-12">
@@ -57,24 +136,24 @@
             <div class="col-sm-2">
                 <h3><small>President</small></h3>
             </div>
-            <div class="col-sm-2"><img class="eboardProfile" src="images/vdeN.jpg" alt="" /></div>
+            <div class="col-sm-2"><img class="eboardProfile" src="images/pres.jpg" alt="The President" onerror="this.onerror=null;this.src='images/eboardAlt.jpg';"/></div>
             <div class="col-sm-8">
                 <table class="table table-stripped">
                     <tbody>
                         <tr><th>Name:</th>
-                            <td>Vincent De</td>
+                            <td id="presName"></td>
                         </tr>
                         <tr><th>Position:</th>
                             <td>President</td>
                         </tr>
                         <tr><th>Favorite Anime:</th>
-                            <td>D. Gray Man</td>
+                            <td id="presAnime"></td>
                         </tr>
                         <tr><th>Favorite Character:</th>
-                            <td>Nea D. Campbell</td>
+                            <td id="presChar"></td>
                         </tr>
                         <tr><th>Bio:</th>
-                            <td>I am a comp sci major with a concentration in information technology and am on the eboard of anime society...duh. I was put on this society in order to run things efficiently and to ensure that our members voices were heard. I intend to do this as I continue with this board and hope to mature along with its members and other officers. If you ever have a question or complaint do not hesitate to contact me, or any other board member. I hope that you enjoy the club as it is right now and how it will evolve in the future.</td>
+                            <td id="presBio"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -89,24 +168,24 @@
             <div class="col-sm-2">
                 <h3><small>VP</small></h3>
             </div>
-            <div class="col-sm-2"><img class="eboardProfile" src="images/jsmoeN.jpg" alt="" /></div>
+            <div class="col-sm-2"><img class="eboardProfile" src="images/vp.jpg" alt="The Vice President" onerror="this.onerror=null;this.src='images/eboardAlt.jpg';"/></div>
             <div class="col-sm-8">
                 <table class="table table-stripped">
                     <tbody>
                         <tr><th>Name:</th>
-                            <td>Joe Smokonich</td>
+                            <td id="vpName"></td>
                         </tr>
                         <tr><th>Position:</th>
                             <td>Vice President</td>
                         </tr>
                         <tr><th>Favorite Anime:</th>
-                            <td>Barakemon</td>
+                            <td id="vpAnime"></td>
                         </tr>
                         <tr><th>Favorite Character:</th>
-                            <td>Shizuo Heiwsjima</td>
+                            <td id="vpChar"></td>
                         </tr>
                         <tr><th>Bio:</th>
-                            <td>Hi my name is Joe, my nickname is Joe Smo. I am the VP of the anime club. As the VP, I do the lights. My favorite anime is Barakamon. I started watching anime when I was in 9th grade and my first anime was fruits basket. Somethings I do besides watch anime is play Pokemon.</td>
+                            <td id="vpBio"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -121,24 +200,24 @@
             <div class="col-sm-2">
                 <h3><small>TR</small></h3>
             </div>
-            <div class="col-sm-2"><img class="eboardProfile" src="images/snorman.jpg" alt="eboardvin" width="150" height="150" /></div>
+            <div class="col-sm-2"><img class="eboardProfile" src="images/tr.jpg" alt="The Treasurer" onerror="this.onerror=null;this.src='images/eboardAlt.jpg';"/></div>
             <div class="col-sm-8">
                 <table class="table table-stripped">
                     <tbody>
                         <tr><th>Name:</th>
-                            <td>Sean Norman</td>
+                            <td id="trName"></td>
                         </tr>
                         <tr><th>Position:</th>
                             <td>Treasurer</td>
                         </tr>
                         <tr><th>Favorite Anime:</th>
-                            <td>Steins;Gate</td>
+                            <td id="trAnime"></td>
                         </tr>
                         <tr><th>Favorite Character:</th>
-                            <td>Bobobo-bo Bo-bobo</td>
+                            <td id="trChar"></td>
                         </tr>
                         <tr><th>Bio:</th>
-                            <td>I am Sean, the new Treasurer. I basically am in charge of your food. I am a Philosophy and Religious studies major with a heavily analytical mind. As a result, many of my favorite shows tend to be thought-provoking and intellectual(Yes I know that sounds pretentious. Shhhhhh.) That being said, I do love a good mindless action anime as well</td>
+                            <td id="trBio"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -153,24 +232,24 @@
             <div class="col-sm-2">
                 <h3><small>SC</small></h3>
             </div>
-            <div class="col-sm-2"><img class="eboardProfile" src="images/astigliano.jpg" alt="" /></div>
+            <div class="col-sm-2"><img class="eboardProfile" src="images/sc.jpg" alt="The Secretary" onerror="this.onerror=null;this.src='images/eboardAlt.jpg';"/></div>
             <div class="col-sm-8">
                 <table class="table table-stripped">
                     <tbody>
                         <tr><th>Name:</th>
-                            <td>Alex Stigliano</td>
+                            <td id="scName"></td>
                         </tr>
                         <tr><th>Position:</th>
                             <td>Secretary</td>
                         </tr>
                         <tr><th>Favorite Anime:</th>
-                            <td>Kinnikuman</td>
+                            <td id="scAnime"></td>
                         </tr>
                         <tr><th>Favorite Character:</th>
-                            <td>Bobobo-bo Bo-bobo</td>
+                            <td id="scChar"></td>
                         </tr>
                         <tr><th>Bio:</th>
-                            <td>Heyo there, I am a computer science major and I am currently on the Anime Society E-board as you can see by my snazzy title. I'm excited to be a part of this club and personally cannot wait to see what the future holds for all of us.</td>
+                            <td id="scBio"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -185,24 +264,24 @@
             <div class="col-sm-2">
                 <h3><small>LB</small></h3>
             </div>
-            <div class="col-sm-2"><img class="eboardProfile" src="images/ftregliaN.png" alt="eboardf" width="512" height="512" /></div>
+            <div class="col-sm-2"><img class="eboardProfile" src="images/lib.jpg" alt="The Librarian" onerror="this.onerror=null;this.src='images/eboardAlt.jpg';" /></div>
             <div class="col-sm-8">
                 <table class="table table-stripped">
                     <tbody>
                         <tr><th>Name:</th>
-                            <td>Francessca Treglia</td>
+                            <td id="libName"></td>
                         </tr>
                         <tr><th>Position:</th>
                             <td>Librarian</td>
                         </tr>
                         <tr><th>Favorite Anime:</th>
-                            <td>Sailor Moon</td>
+                            <td id="libAnime"></td>
                         </tr>
                         <tr><th>Favorite Character:</th>
-                            <td>Soma Yakihira</td>
+                            <td id="libChar"></td>
                         </tr>
                         <tr><th>Bio:</th>
-                            <td>My name is Francesca Treglia and I am your Librarian! I am a Senior Majoring in Psychology and pursuing a 2nd degree and career in Speech Therapy. I have been part of this club since my Freshman Year. I had an amazing time during my recent Spring semester abroad in Japan. My favorite animes are : Sailor Moon, Hellsing, Hellsing Ultimate, Noragami, Vampire Knight, Food Wars and Boku No Hero Academia. Fun Fact: I speak Italian! I am also the President of Asian Alliance.</td>
+                            <td id="libBio"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -217,24 +296,24 @@
             <div class="col-sm-2">
                 <h3><small>PR</small></h3>
             </div>
-            <div class="col-sm-2"><img class="eboardProfile" src="images/ecaferraN.jpg" alt="eboarde" width="150" height="150" /></div>
+            <div class="col-sm-2"><img class="eboardProfile" src="images/pr.jpg" alt="The PR" onerror="this.onerror=null;this.src='images/eboardAlt.jpg';"/></div>
             <div class="col-sm-8">
                 <table class="table table-stripped">
                     <tbody>
                         <tr><th>Name:</th>
-                            <td>Erina Caferra</td>
+                            <td id="prName"></td>
                         </tr>
                         <tr><th>Position:</th>
                             <td>Public Relations</td>
                         </tr>
                         <tr><th>Favorite Anime:</th>
-                            <td>One Piece</td>
+                            <td id="prAnime"></td>
                         </tr>
                         <tr><th>Favorite Character:</th>
-                            <td>Trafalgar D. Law</td>
+                            <td id="prChar"></td>
                         </tr>
                         <tr><th>Bio:</th>
-                            <td>Hello hello, I'm Erina, the current PR of this club. I might be a Computer Science major, but a large part of my life is art. I make the posters and banners and whatever other art you might see relating to the club. I also created our mascot Akane; you might have seen her around flipping her red tail or twitching her long ears. My other interests include video games, such as Fire Emblem and Borderlands. I'd be willing to talk about commissions if you are interested and art trades if you're an artist like me.</td>
+                            <td id="prBio"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -249,24 +328,24 @@
             <div class="col-sm-2">
                 <h3><small>WM</small></h3>
             </div>
-            <div class="col-sm-2"><img class="eboardProfile" src="images/vjosephN.jpg" alt="" /></div>
+            <div class="col-sm-2"><img class="eboardProfile" src="images/wm.jpg" alt="The Webmaster" onerror="this.onerror=null;this.src='images/eboardAlt.jpg';"/></div>
             <div class="col-sm-8">
                 <table class="table table-stripped">
                     <tbody>
                         <tr><th>Name:</th>
-                            <td>Vallie Joseph</td>
+                            <td id="wmName"></td>
                         </tr>
                         <tr><th>Position:</th>
                             <td>Web Master</td>
                         </tr>
                         <tr><th>Favorite Anime:</th>
-                            <td>Ghost in the Shell</td>
+                            <td id="wmAnime"></td>
                         </tr>
                         <tr><th>Favorite Character:</th>
-                            <td>Motoko Kusanagi</td>
+                            <td id="wmChar"></td>
                         </tr>
                         <tr><th>Bio:</th>
-                            <td>Hello everyone! My name is Vallie and I'm the current webmaster for Anime Society. I'm a computer science major with minors in IT, IS and Games &amp; Emerging Media. I love web design (obviously), video games and of course, anime. Should you find any issues with our website or FB page, feel free to let me know!</td>
+                            <td id="wmBio"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -275,30 +354,31 @@
         
         <br/><br/><br/>
 
-        <!-- Online Librarian -->
+        <!-- Online Librarian
+            Position merged with Librarian, will be added back if necessary
 
         <div class="row">
             <div class="col-sm-2">
                 <h3><small>eLib</small></h3>
             </div>
-            <div class="col-sm-2"><img class="eboardProfile" src="images/emarsN.jpg" alt="" /></div>
+            <div class="col-sm-2"><img class="eboardProfile" src="images/elib.jpg" alt="The Online Librarian" onerror="this.onerror=null;this.src='images/eboardAlt.jpg';"/></div>
             <div class="col-sm-8">
                 <table class="table table-stripped">
                     <tbody>
                         <tr><th>Name:</th>
-                            <td>Ed Marrs</td>
+                            <td id="eLibName"></td>
                         </tr>
                         <tr><th>Position:</th>
                             <td>Online Librarian</td>
                         </tr>
                         <tr><th>Favorite Anime:</th>
-                            <td>Angel Beats!</td>
+                            <td id="eLibAnime"></td>
                         </tr>
                         <tr><th>Favorite Character:</th>
-                            <td>Rintarou Okabe</td>
+                            <td id="eLibChar"></td>
                         </tr>
                         <tr><th>Bio:</th>
-                            <td>Hey guys, My name is Ed Marrs and I am the Shadow Online Librarian. I am currently a sophomore with Majors in both CS and Games &amp; Emerging Media. I started watching Anime in 9th grade and have been hooked ever since! When I'm not watching anime, you can usually catch me playing video games or Dungeons &amp; Dragons.</td>
+                            <td id="eLibBio"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -306,31 +386,33 @@
         </div>
         
         <br/><br/><br/>
-
+        
+        -->
+        
         <!-- Project Leader, ie the guy who makes cool shit -->
 
         <div class="row">
             <div class="col-sm-2">
                 <h3><small>PL</small></h3>
             </div>
-            <div class="col-sm-2"><img class="eboardProfile" src="images/psofronasN.jpg" alt="" /></div>
+            <div class="col-sm-2"><img class="eboardProfile" src="images/pl.jpg" alt="The Project Leader" onerror="this.onerror=null;this.src='images/eboardAlt.jpg';"/></div>
             <div class="col-sm-8">
                 <table class="table table-stripped">
                     <tbody>
                         <tr><th>Name:</th>
-                            <td>Peter Sofronas</td>
+                            <td id="plName"></td>
                         </tr>
                         <tr><th>Position:</th>
                             <td>Project Leader/DBMA</td>
                         </tr>
                         <tr><th>Favorite Anime:</th>
-                            <td>JoJo's Bizzare Adventure</td>
+                            <td id="plAnime"></td>
                         </tr>
                         <tr><th>Favorite Character:</th>
-                            <td>Kamina</td>
+                            <td id="plChar"></td>
                         </tr>
                         <tr><th>Bio:</th>
-                            <td>Senior cs major. Been part of this club since stepping foot on campus. The front right row 3rd seat from the aisle is reserved.</td>
+                            <td id="plBio"></td>
                         </tr>
                     </tbody>
                 </table>
