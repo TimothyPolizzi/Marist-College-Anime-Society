@@ -65,7 +65,7 @@
         function vp(){
             document.getElementById("vpName").innerHTML = "Ed Marrs";
             document.getElementById("vpAnime").innerHTML = "Angel Beats!";
-            document.getElementById("vpChar").innerHTML = "Rintarou Okabe";
+            document.getElementById("vpChar").innerHTML = "Megumin";
             document.getElementById("vpBio").innerHTML = "Hey guys, My name is Ed Marrs and I am the Vice President. I am currently a sophomore with Majors in both CS and Games & Emerging Media. I started watching Anime in 9th grade and have been hooked ever since! When I'm not watching anime, you can usually catch me playing video games or Dungeons & Dragons.";
         }
 
@@ -105,8 +105,44 @@
         function wm(){
             document.getElementById("wmName").innerHTML = "Tim Polizzi";
             document.getElementById("wmAnime").innerHTML = "Nisekoi";
-            document.getElementById("wmChar").innerHTML = "Celty Sturluson";
+            document.getElementById("wmChar").innerHTML = randomAnime();
             document.getElementById("wmBio").innerHTML = "Hi its the guy who made this site! I'm a freshman here at Marist, (CS major), and I like coding. Sometimes. I've been watching anime for too long, and am neck deep in manga and LNs. If you ever want to find me, look for your local dark corner with an outlet and you can find me. Let me know if you find any bugs!";
+        }
+        
+        //For the memes
+        
+        function randomAnime(){
+            var ranInt = parseInt(Math.random()*11);
+            var animeGrill;
+            
+            switch(ranInt){
+                case 0: animeGrill = "Karen Araragi";
+                    break;
+                case 1: animeGrill = "Megumin";
+                    break;
+                case 2: animeGrill = "Felix Argyle";
+                    break;
+                case 3: animeGrill = "Celty Sturluson";
+                    break;
+                case 4: animeGrill = "Yuno Gasai";
+                    break;
+                case 5: animeGrill = "Takagi";
+                    break;
+                case 6: animeGrill = "Rias Gremory";
+                    break;
+                case 7: animeGrill = "Umaru Doma";
+                    break;
+                case 8: animeGrill = "Sagari Izumi";
+                    break;
+                case 9: animeGrill = "Yui Hirasawa";
+                    break;
+                case 10: animeGrill = "Yuuki Asuna";
+                    break;
+                default: animeGrill = "Kirigaya Suguha";
+                    break;
+            }
+            
+            return animeGrill;
         }
 
         //Project Master Info
