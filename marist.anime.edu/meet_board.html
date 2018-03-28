@@ -50,6 +50,7 @@
             pr();
             wm();
             pm();
+            monika();
         }
 
 
@@ -112,7 +113,7 @@
         //For the memes
         
         function randomAnime(){
-            var ranInt = parseInt(Math.random()*11);
+            var ranInt = parseInt(Math.random()*13);
             var animeGrill;
             
             switch(ranInt){
@@ -138,11 +139,24 @@
                     break;
                 case 10: animeGrill = "Yuuki Asuna";
                     break;
+                case 11: animeGrill = "Paul Ippolito";
+                    break;
+                case 12: animeGrill = "Emperor Palpatine";
+                    break;
                 default: animeGrill = "Kirigaya Suguha";
                     break;
             }
             
             return animeGrill;
+        }
+        
+        //JUST MONIKA
+        function monika(){
+            var ranInt = parseInt(Math.random()*100);
+            
+            if(ranInt == 0){
+                document.getElementById("wmPic").src = "images/begonika.jpg";
+            }
         }
 
         //Project Master Info
@@ -364,7 +378,7 @@
             <div class="col-sm-2">
                 <h3><small>WM</small></h3>
             </div>
-            <div class="col-sm-2"><img class="eboardProfile" src="images/wm.jpg" alt="The Webmaster" onerror="this.onerror=null;this.src='images/eboardAlt.jpg';"/></div>
+            <div class="col-sm-2"><img class="eboardProfile" id="wmPic" src="images/wm.jpg" alt="The Webmaster" onerror="this.onerror=null;this.src='images/eboardAlt.jpg';"/></div>
             <div class="col-sm-8">
                 <table class="table table-stripped">
                     <tbody>
