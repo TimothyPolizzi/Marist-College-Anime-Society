@@ -5,6 +5,7 @@
     background-color: #b31b1b;
     border-color:transparent;
     margin:0%;
+    color: black;
 }
 
 .active{
@@ -19,6 +20,14 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #8E8C84;
 }
 
 /* ------------------- Body BS -------------------- */
