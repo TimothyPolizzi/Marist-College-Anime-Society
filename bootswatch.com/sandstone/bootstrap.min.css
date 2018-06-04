@@ -161,14 +161,14 @@ sup {
 }
 
 a {
-    color: #93C54B;
+    color: black;
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects
 }
 
 a:hover {
-    color: #6b9430;
+    color: #8E8C84;
     text-decoration: underline
 }
 
@@ -7494,7 +7494,7 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus {
     white-space: nowrap;
     -webkit-clip-path: inset(50%);
     clip-path: inset(50%);
-    border: 0
+    border: 0;
 }
 
 .sr-only-focusable:active, .sr-only-focusable:focus {
@@ -7505,7 +7505,7 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus {
     clip: auto;
     white-space: normal;
     -webkit-clip-path: none;
-    clip-path: none
+    clip-path: none;
 }
 
 .w-25 {

@@ -5,12 +5,12 @@
     background-color: #b31b1b;
     border-color:transparent;
     margin:0%;
-    color: black;
+    color: #ffffff;
 }
 
 .active{
     color: #ffffff;
-    background-color: white;
+    background-color: rgb(57, 58, 53);
 }
 
 /* The bottom image of the banner on the home page */
@@ -23,11 +23,11 @@
 }
 
 a {
-    color: black;
+    color: #ffffff;
 }
 
 a:hover {
-    color: #8E8C84;
+    color: #ffffff;
 }
 
 /* ------------------- Body BS -------------------- */
