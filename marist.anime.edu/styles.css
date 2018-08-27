@@ -102,6 +102,25 @@ a:hover {
     border-radius: 100%;
 }
 
+.box-circle{
+    height:150px;
+    width: 150px;
+    margin-bottom: 75px;
+}
+
+.us-circle{
+    height:150px;
+    width: 150px;
+    margin-bottom: 100px;
+    border-radius: 100%;
+}
+
+.past-circle{
+    height:100px;
+    width: 100px;
+    margin-bottom: 100px;
+}
+
 /* -------------------- Footer BS -------------------- */
 
 /* The actual body of the footer banner */
