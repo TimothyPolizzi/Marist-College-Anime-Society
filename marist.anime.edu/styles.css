@@ -65,7 +65,7 @@ a:hover {
 
 /* About-us page */
 .animeBackground{
-    background-image: url("../images.alphacoders.com/555/555557.png");
+    background-image: url("images/images.alphacoders.com.flowers.png");
     width: 110%;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -97,8 +97,8 @@ a:hover {
 }
 
 .eboardProfile{
-    height:auto;
-    width:100%;
+    height:150px;
+    width:150px;
     border-radius: 100%;
 }
 
